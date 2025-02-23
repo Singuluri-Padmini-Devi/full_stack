@@ -1,0 +1,20 @@
+# Create project directory
+mkdir babysteps-appointment
+cd babysteps-appointment
+
+# Create and setup backend
+mkdir backend
+cd backend
+npm init -y
+
+# Install backend dependencies
+npm install express mongoose cors dotenv date-fns
+npm install --save-dev nodemon
+
+# Create and setup frontend
+cd ..
+npx create-react-app frontend
+cd frontend
+
+# Install frontend dependencies
+npm install @mui/material @mui/icons-material @emotion/react @emotion/styled axios react-router-dom date-fns 
